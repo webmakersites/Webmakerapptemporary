@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="manifest" href="https://pwainstall.glitch.me/manifest.json" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="https://pwainstall.glitch.me/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="https://pwainstall.glitch.me/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Hi there!</h1>
+
+    <p>
+      Click the install button below!
+    </p>
+
+    <pwa-install>Install</pwa-install>
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"
+    ></script>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("https://pwainstall.glitch.me/service-worker.js");
+      }
+    </script>
+  </body>
+</html>
