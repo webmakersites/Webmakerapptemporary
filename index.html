@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    
+    <title>Glitch PWA Demo</title>
+    
+    <link rel="icon" href="https://cdn.glitch.com/2ac3b5da-258d-48b1-b4e0-da342e629bb9%2Ffavicon.png?1489742186400">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h1>About This Project</h1>
+    <p>
+      This was inspired by <a href="https://twitter.com/kosamari/status/842452473281429505">@kosmari</a>'s <a href="https://glitch.com/edit/#!/offline-with-serviceworker">https://glitch.com/edit/#!/offline-with-serviceworker</a>, but uses <a href="https://github.com/GoogleChrome/sw-precache"><code>sw-precache</code></a> to generate an offline-first service worker that will automatically be kept up to date based on whatever's in your <code>public/</code> folder, without you having to remember to update anything.
+    </p>
+    <p>
+      It also includes a cache-first runtime caching strategy for all assets that are loaded via Glitch's CDN.
+    </p>
+    <p>
+      Finally, it includes a <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest">web app manifest</a>, meeting the requirements for a <a href="https://developers.google.com/web/progressive-web-apps/">progressive web app</a>.
+    </p>
+    
+    <h1>Remix Me!</h1>
+    <p>
+      The project's source is at <a href="https://glitch.com/edit/#!/pwa-demo">https://glitch.com/edit/#!/pwa-demo</a>.
+    </p>
+    <p>
+      It should be everything you need to get started with your own progressive web app!
+    </p>
+    
+    <img src="https://cdn.glitch.com/2ac3b5da-258d-48b1-b4e0-da342e629bb9%2Ffavicon.png?1489742186400">
+    
+    <div id="sw-status"></div>
+    
+    <script src="/service-worker-registration.js"></script>
+  </body>
+</html>
